@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cotação do Real</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)='price()' >Consultar</ion-button>
+  <p>
+    Moeda: {{this.usdCode}}<br>
+    Valor: {{this.usdAsk}}
+    <br><br>
+    Moeda: {{this.eurCode}}<br>
+    Valor: {{this.eurAsk}}
+    <br><br>
+    Moeda: {{this.btcCode}}<br>
+    Valor: {{this.btcAsk}}
+  </p>
+</ion-content>

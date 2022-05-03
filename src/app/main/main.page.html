@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main_icons">
+      <ul>
+        <ion-button (click)='goToWeather()'>
+          <ion-icon name="thunderstorm-outline"></ion-icon>
+          <span>Previsão do tempo</span>
+        </ion-button>
+        <ion-button (click)="goToShoppingList()">
+          <ion-icon name="storefront-outline"></ion-icon>
+          <span>Lista de Compras</span>
+        </ion-button>
+        <ion-button (click)="goToRealPrice()">
+          <ion-icon name="cash-outline"></ion-icon>
+          <span>Cotação do Real</span>
+        </ion-button>
+        <ion-button (click)="deleteAccount()">
+          <ion-icon name="close-circle-outline"></ion-icon>
+          <span>Deletar Conta</span>
+        </ion-button>
+      </ul>
+  </div>
+</ion-content>

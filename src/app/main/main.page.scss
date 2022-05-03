@@ -1,0 +1,11 @@
+.main_icons > ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+ion-button{
+  min-width: 75%;
+
+}

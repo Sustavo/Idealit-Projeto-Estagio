@@ -1,0 +1,26 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>IDEALIT</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="login_form">
+    <div class="login_input">
+      <ion-input placeholder="Login" type="email" [(ngModel)]="email"></ion-input>
+    </div>
+    <div class="login_input">
+      <ion-input placeholder="Senha" type="password" [(ngModel)]="password"></ion-input>
+    </div>
+
+    <div class="buttons">
+      <div class="login_button">
+        <ion-button expand="block" (click)='authenticate()' >Enviar</ion-button>
+      </div>
+      <span>ou</span>
+      <div class="signup_button">
+        <ion-button (click)='goToSignup()' expand="block" >Cadastrar</ion-button>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

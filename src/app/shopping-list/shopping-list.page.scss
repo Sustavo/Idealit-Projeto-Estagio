@@ -1,0 +1,10 @@
+.check {
+  display: flex;
+  flex-direction: column;
+  span{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
