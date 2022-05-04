@@ -17,7 +17,7 @@ export class MainPage implements OnInit {
 
   goToHome(){
     this.router.navigate(['home']);
-  }
+  };
   goToRealPrice() {
     this.router.navigate(['real-price']);
   };
