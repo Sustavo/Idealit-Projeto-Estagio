@@ -1,6 +1,7 @@
 /* eslint-disable prefer-arrow/prefer-arrow-functions */
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-real-price',
@@ -15,11 +16,14 @@ export class RealPricePage implements OnInit {
   btcCode: string;
   btcAsk: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goToMain(){
+    this.router.navigate(['main']);
+  };
 
   price(){
     axios.get(`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL`)
