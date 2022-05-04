@@ -5,5 +5,19 @@
 </ion-header>
 
 <ion-content>
+  <div class="cep_input">
+    <ion-input placeholder="CEP" type="text" [(ngModel)]="cep"></ion-input>
+    <ion-button expand="block" (click)='weather()' >Consultar</ion-button>
+  </div>
+  <ul>
+    <li>Cidade: {{this.city}}<br></li>
+    <li>Endereço: {{this.address}}</li>
+    <li>Temperatura Média: {{this.decimalPlace(this.cAverage)}}<br></li>
+    <li>Previsão: {{this.teste}}</li>
+  </ul>
 
+  <ion-button (click)="goToMain()" class="goTomain">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Voltar</span>
+  </ion-button>
 </ion-content>
