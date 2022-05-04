@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-list',
@@ -6,18 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.page.scss'],
 })
 export class ShoppingListPage implements OnInit {
-  addMarket: string;
-  constructor() { }
+  item: string;
+  public items = [];
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    if (!localStorage.length){
+      localStorage.setItem('market', JSON.stringify(this.items));
+    }
+    const arrayTrat = JSON.parse(localStorage.getItem('market'));
+    this.items = arrayTrat;
   }
 
-  market() {
-    const market = [];
-    market.push(this.addMarket);
-    console.log(market);
-    localStorage.setItem('market', JSON.stringify(market));
+  addItem() {
+    this.items.push(this.item);
+    localStorage.setItem('market', JSON.stringify(this.items));
     }
 
-
+    goToMain(){
+      this.router.navigate(['main']);
+    };
 }
