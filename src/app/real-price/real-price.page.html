@@ -7,13 +7,23 @@
 <ion-content>
   <ion-button expand="block" (click)='price()' >Consultar</ion-button>
   <p>
-    Moeda: {{this.usdCode}}<br>
-    Valor: {{this.usdAsk}}
-    <br><br>
-    Moeda: {{this.eurCode}}<br>
-    Valor: {{this.eurAsk}}
-    <br><br>
-    Moeda: {{this.btcCode}}<br>
-    Valor: {{this.btcAsk}}
+    <span>
+      Moeda: {{this.usdCode}}<br>
+      Valor: R${{this.usdAsk}}
+    </span>
+    <span>
+
+      Moeda: {{this.eurCode}} <br>
+      Valor: R${{this.eurAsk}}
+    </span>
+
+    <span>
+      Moeda: {{this.btcCode}}<br>
+      Valor: R${{this.btcAsk}}
+    </span>
   </p>
+    <ion-button (click)="goToMain()" class="goTomain">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <span>Voltar</span>
+    </ion-button>
 </ion-content>
