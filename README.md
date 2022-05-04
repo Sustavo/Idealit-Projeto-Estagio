@@ -1,8 +1,10 @@
 # Idealit-Projeto-Estagio
-<b>Iniciar - "ionic serve" in terminal </b> <br>
 <b>É preciso primeiramente criar uma conta para usar o Idealit</b>
 
-
+<b>installation and open code</b> <br>
+npm install -g ionic <br>
+"code ." on project directory <br>
+"ionic serve" on project directory <br>
 
 
 <b>Idealit</b> <br>
@@ -21,13 +23,11 @@ caso seja de seu interesse, pode-se excluir a sua conta, mas não se preocupe, v
 <b>Voltar</b> <br>
 você pode voltar para a última página que estava
 
-RF (Requisitos Funcionais)
 
 
 
 
-
-Fontes:
+<b>Fontes</b> <br>
 Previsão do Tempo - https://home.openweathermap.org/ <br>
 CEP - https://docs.awesomeapi.com.br/api-cep <br>
 Cotação de Moedas - https://docs.awesomeapi.com.br/api-de-moedas <br>
