@@ -7,11 +7,20 @@
 <ion-content>
   <div class="check">
     <ion-item>
-      <ion-input placeholder="Compras" type="text" [(ngModel)]="addMarket" ></ion-input>
-      <ion-button color="primary" (click)='market()'>Enviar</ion-button>
+      <ion-input placeholder="Compras" type="text" [(ngModel)]="item" ></ion-input>
+      <ion-button color="primary" (click)='addItem()'>Enviar</ion-button>
     </ion-item>
     <span>LISTA</span>
+    <ul>
+      <li *ngFor="let item of items">
+        <p>{{item}}</p>
+        <ion-checkbox checked="true"></ion-checkbox>
+      </li>
 
-
+    </ul>
   </div>
+  <ion-button (click)="goToMain()" class="goTomain">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Voltar</span>
+  </ion-button>
 </ion-content>
